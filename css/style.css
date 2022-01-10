@@ -23,17 +23,53 @@
   src : url('../fonts/Pang.otf') format("opentype");
 }
 
-@keyframes rotation {
-  from {transform: rotate(38deg);}
-  to {transform: rotate(398deg);}
-}
+@keyframes rotation {from {transform: rotate(38deg);}to {transform: rotate(398deg);}}
+@keyframes blink{50%{opacity: .5;}}
 
 .rotate {animation: rotation 60s infinite linear;}
+.blink {animation : blink 5s infinite linear}
 
 body{
-  font-family : 'Pang';
+  font-family : 'Arial';
+  
+  width : 100vw; 
+  height : 100vh; 
+  overflow : hidden; 
+  
+  background : no-repeat center center fixed url('../img/elodie.png') #000092; 
+  background-size : cover; 
+  
+  display : flex; 
+  flex-direction : column;
+  justify-content : center; 
+  
+  margin : auto; 
+  padding : auto;
 }
 
+.margin-auto{margin : auto;}
+.center{text-align : center}
+
+.stars{
+  font-size : 200%;
+  text-align : center; 
+  color : red; 
+  border-radius : 200px; 
+  padding : 16px 32px; 
+  background : rgba(255, 255, 255, .7)
+}
+.gift-link{
+  font-size : 200%;
+  border-radius : 200px;
+  background : white;
+  padding : 32px 64px;
+  text-decoration : none;
+}
+.icons-links{
+  padding : 20px;
+}
+
+.soundcloud-link, .instagram-link { color : white}
 .trash{
   background : url('img/elodie.png') #000092 no-repeat center center fixed; overflow : visible
 }
