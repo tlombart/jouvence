@@ -1,0 +1,39 @@
+@font-face{
+  font-family : 'Lyno Stan';
+  src : url('../fonts/Lyno-Stan.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Lyno Jean';
+  src : url('../fonts/Lyno-Jean.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Lyno Walt';
+  src : url('../fonts/Lyno-Walt.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Lyno Ulys';
+  src : url('../fonts/Lyno-Ulys.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Pang';
+  src : url('../fonts/Pang.otf') format("opentype");
+}
+
+@keyframes rotation {
+  from {transform: rotate(38deg);}
+  to {transform: rotate(398deg);}
+}
+
+.rotate {animation: rotation 60s infinite linear;}
+
+body{
+  font-family : 'Pang';
+}
+
+.trash{
+  background : url('img/elodie.png') #000092 no-repeat center center fixed; overflow : visible
+}
