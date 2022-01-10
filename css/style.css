@@ -1,33 +1,8 @@
-@font-face{
-  font-family : 'Lyno Stan';
-  src : url('../fonts/Lyno-Stan.otf') format("opentype");
-}
-
-@font-face{
-  font-family : 'Lyno Jean';
-  src : url('../fonts/Lyno-Jean.otf') format("opentype");
-}
-
-@font-face{
-  font-family : 'Lyno Walt';
-  src : url('../fonts/Lyno-Walt.otf') format("opentype");
-}
-
-@font-face{
-  font-family : 'Lyno Ulys';
-  src : url('../fonts/Lyno-Ulys.otf') format("opentype");
-}
-
-@font-face{
-  font-family : 'Pang';
-  src : url('../fonts/Pang.otf') format("opentype");
-}
-
 @keyframes rotation {from {transform: rotate(38deg);}to {transform: rotate(398deg);}}
-@keyframes blink{50%{opacity: .5;}}
+@keyframes blink{70%{opacity: .2;}}
 
 .rotate {animation: rotation 60s infinite linear;}
-.blink {animation : blink 5s infinite linear}
+.blink {animation : blink 7s infinite linear}
 
 body{
   font-family : 'Arial';
@@ -50,22 +25,16 @@ body{
 .margin-auto{margin : auto;}
 .center{text-align : center}
 
-.stars{
-  font-size : 200%;
-  text-align : center; 
-  color : red; 
-  border-radius : 200px; 
-  padding : 16px 32px; 
-  background : rgba(255, 255, 255, .7)
-}
 .gift-link{
-  font-size : 200%;
+  font-size : 3vh;
   border-radius : 200px;
   background : white;
   padding : 32px 64px;
   text-decoration : none;
 }
+
 .icons-links{
+  margin : 0 0 50px 0;
   padding : 20px;
 }
 
