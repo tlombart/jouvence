@@ -1,2 +1,2 @@
-# elodie
-a subdomain i created for elodie's 26th
+# jouvence
+a website for my 3d fun
