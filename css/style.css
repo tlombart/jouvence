@@ -6,12 +6,13 @@
 
 body{
   font-family : 'Arial';
+  color : white;
   
   width : 100vw; 
   height : 100vh; 
   overflow : hidden; 
   
-  background : no-repeat center center fixed url('../img/elodie.png') #000092; 
+  background : no-repeat center center fixed #0101a2; 
   background-size : cover; 
   
   display : flex; 
