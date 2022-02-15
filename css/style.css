@@ -33,14 +33,15 @@ body{
 .left{text-align : left}
 .inline-block{display : inline-block}
 
-.img-caroussel{
+.img-carrousel{
   width : 600px;
+  height : 500px;
   margin-bottom : 30px;
   display : flex;
   overflow-x : auto;
 }
 
-.img-caroussel img{
+.img-carrousel img{
   margin-right : 10px;
   height : 500px;
 }
@@ -65,9 +66,18 @@ body{
   color : white;
 }
 
-.soundcloud-link, .instagram-link, a {
+.soundcloud-link, .instagram-link, a{
   color : white
-  
+}
+
+a:hover {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	transform: scale(-1, 1);
+}
+
+a:visited{
+  color : white;
 }
 
 .trash{
