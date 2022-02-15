@@ -1,11 +1,16 @@
 @keyframes rotation {from {transform: rotate(38deg);}to {transform: rotate(398deg);}}
 @keyframes blink{70%{opacity: .2;}}
 
+@font-face{
+  font-family : 'Authentic Sans';
+  src : url('../fonts/AUTHENTICSans-90.otf') format("opentype");
+}
+
 .rotate {animation: rotation 60s infinite linear;}
 .blink {animation : blink 7s infinite linear}
 
 body{
-  font-family : 'Arial';
+  font-family : 'Authentic Sans';
   color : white;
   
   width : 100vw; 
@@ -25,6 +30,20 @@ body{
 
 .margin-auto{margin : auto;}
 .center{text-align : center}
+.left{text-align : left}
+.inline-block{display : inline-block}
+
+.img-caroussel{
+  width : 600px;
+  margin-bottom : 30px;
+  display : flex;
+  overflow-x : auto;
+}
+
+.img-caroussel img{
+  margin-right : 10px;
+  height : 500px;
+}
 
 .gift-link{
   font-size : 3vh;
@@ -43,10 +62,14 @@ body{
 .icons-links{
   padding : 20px;
   margin : 20px;
-  color :white;
+  color : white;
 }
 
-.soundcloud-link, .instagram-link { color : white}
+.soundcloud-link, .instagram-link, a {
+  color : white
+  
+}
+
 .trash{
   background : url('img/elodie.png') #000092 no-repeat center center fixed; overflow : visible
 }
