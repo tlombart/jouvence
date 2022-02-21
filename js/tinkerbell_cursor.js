@@ -4,7 +4,7 @@
  *  http://www.mf2fm.com/rv    *
  ******************************/
 var colour = "random", // or "#000000"
-    sparkles = 1250,
+    sparkles = 200,
     x = 400,
     ox = 400,
     y = 300,
