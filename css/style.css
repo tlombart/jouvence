@@ -28,7 +28,6 @@ body{
   height : 100vh; 
   overflow : hidden; 
   
-   
   background : url('../img/jouvence.png') no-repeat 50% 25% fixed, radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%); 
   background-size : 100%;
   
@@ -44,6 +43,19 @@ body{
 .center{text-align : center}
 .left{text-align : left}
 .inline-block{display : inline-block}
+
+.front-box{
+  max-width : 40%;
+  background : rgba(128, 128, 255, 0.1); 
+  border-radius : 20px; 
+  
+  margin-bottom : 0;
+  margin : auto; 
+  padding : 20px 40px; 
+  
+  box-shadow : 0 0 100px rgba(255, 255, 255, .4) inset; 
+  border : 7px solid rgba(255, 255, 255, .2)
+}
 
 .img-carrousel{
   max-width : 100vw;
