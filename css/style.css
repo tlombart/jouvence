@@ -3,7 +3,17 @@
 
 @font-face{
   font-family : 'Authentic Sans';
-  src : url('../fonts/AUTHENTICSans-90.otf') format("opentype");
+  src : url('../fonts/authentic.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Cubenet';
+  src : url('../fonts/cubenet.otf') format("opentype");
+}
+
+@font-face{
+  font-family : 'Song Neue';
+  src : url('../fonts/song neue.otf') format("opentype");
 }
 
 .rotate {animation: rotation 60s infinite linear;}
@@ -18,8 +28,9 @@ body{
   height : 100vh; 
   overflow : hidden; 
   
-  background : no-repeat center center fixed #0007a7; 
-  background-size : cover; 
+   
+  background : url('../img/jouvence.png') no-repeat 50% 25% fixed, radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%); 
+  background-size : 100%;
   
   display : flex; 
   flex-direction : column;
