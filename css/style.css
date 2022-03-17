@@ -44,6 +44,24 @@ body{
 .left{text-align : left}
 .inline-block{display : inline-block}
 
+.main{
+  background : 
+    url('../img/jouvence.png') no-repeat 50% 25% fixed, 
+    radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%); 
+    background-size : 100%;
+}
+
+.vg{
+  background : 
+    url('../vagalclub/img/vc_logo-_Vclub_1920x1080p.png') no-repeat 50% 0% fixed, 
+    radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%) no-repeat 50% 25% fixed; 
+  background-size : 30%, 100%
+}
+
+.elodie{
+  background : radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%)
+}
+
 .front-box{
   max-width : 40%;
   background : rgba(128, 128, 255, 0.1); 
