@@ -28,7 +28,7 @@ body{
   height : 100vh; 
   overflow : hidden; 
   
-  background : url('../img/jouvence.png') no-repeat 50% 25% fixed, radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%); 
+  background : #0007a7; 
   background-size : 100%;
   
   display : flex; 
