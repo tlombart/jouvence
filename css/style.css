@@ -55,7 +55,7 @@ body{
   background-size : 30%, 100%
 }
 
-#elodie{
+#elodie, #dj9gag{
   background : radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%)
 }
 
