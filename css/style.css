@@ -63,6 +63,10 @@ body{
   background : #0007a7;  
 }
 
+#dj9gag, #vg{
+  height : 130vh;
+}
+
 .front-box{
   max-width : 40%;
   background : rgba(128, 128, 255, 0.1); 
