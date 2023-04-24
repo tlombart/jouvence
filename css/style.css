@@ -23,8 +23,8 @@ body{
   font-family : 'Authentic Sans';
   color : white;
   
-  width : 100vw;
-  max-width : 100%;
+  width : 100% !important;
+  max-width : 100% !important;
   height : 100vh; 
   overflow : hidden; 
 
@@ -65,6 +65,11 @@ body{
 
 #dj9gag, #vg{
   height : 130vh;
+}
+
+#charlotte{
+  background-image: url('../charlotte/img/a3_1920p.png');
+  background-size : cover;
 }
 
 .front-box{
@@ -127,6 +132,103 @@ a:hover {
 
 a:visited{
   color : white;
+}
+
+.ocarinas-cont{
+  width : 300px;
+
+  position : absolute;
+  top : calc(100% - 150px);
+  left : 50px;
+  
+  filter : drop-shadow(0 0 5px #eceef0);
+}
+
+.ocarinas{
+  height : 100px;
+  width : 100px;
+}
+
+
+.karlfroye-img-cont{
+  background : #eceef0;
+  
+  height : calc(500px + 20px + 7px*2);
+  width : 500px;
+    
+  border : 8px #eceef0 solid;
+  border-radius : 5px;
+  box-shadow: 0 0 5px grey;
+    
+  z-index : -1; 
+}
+
+@media (orientation: landscape){
+  .karlfroye-img-cont{
+    position : absolute;
+    left : calc(100% - 550px);
+    top : 50px;
+  }
+}
+
+@media (orientation: portrait){
+  .karlfroye-img-cont{
+    position : absolute;
+    left : calc(50% - (500px + 8px*2)/2);
+    top : 50px;
+  }
+}
+
+.karlfroye-img-cont::before{
+  display : block;
+  
+  height : 20px;
+  width : 500px;
+  
+  padding: 7px 0;
+
+  background : #eceef0;
+  
+  text-align : center;
+  font-weight : bold;
+  color : #4a4a4b;
+  content : "charlotte-500px.jpg";
+}
+
+.karlfroye-img{
+  max-width : 500px;
+  height : auto;
+  border-radius : 5px;
+}
+
+.icon-container{
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+  gap : 10px;
+}
+
+.icon-container a{
+  text-decoration : none;
+}
+
+.file-container{
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items : center;
+  flex-wrap: wrap;
+}
+
+.file-icon{
+  height : 100px;
+  width : 100px;
+}
+
+.file-name{
+  text-align : center;
+  text-shadow: 2px 2px 5px #eceef0;
 }
 
 .trash{
