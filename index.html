@@ -1,38 +1,46 @@
 <!doctype html>
-<html lang = "fr" dir = "ltr">
+<html lang = "fr" dir = "ltr" class = "flex-col-spaceb-center">
   <head>
     <title>jouvence.club</title>
-    <link rel = "icon" type = "image/x-icon" href = "img/favicon.ico">
-    <link rel = "apple-touch-icon" type = "image/x-icon" href = "img/favicon.ico">
+    <link rel = "icon" type = "image/x-icon" href = "assets/img/favicon.ico">
+    <link rel = "apple-touch-icon" type = "image/x-icon" href = "assets/img/favicon.ico">
     <link rel = "stylesheet" href = "css/style.css">
-    
+
     <meta charset = "UTF-8">
-    <meta name = "keywords" content = "art, 3d">
+    <meta name = "keywords" content = "art, 3d, synthesis, computer-assisted">
     <meta name = "author" content = "jouvence">
-    <meta name = "description" content = "">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src = "js/tinkerbell_cursor.js"></script>
+    <meta name = "description" content = "a little portfolio + shopfront of what i can and like to synthetize">
+
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  
-  <body class = "margin-auto center" id = "main" style = "">
-    <div class = "front-box">hello !<br>
-      i'm jouvence,<br>
-      a 3d artist + sound synthesis enthousiast<br>
-      based in toulouse, france
-      <div class = "center" style = "margin : 10px 0">
-        <a href = "/vagalclub/" style = "font-family : Cubenet">v</a>
-        <a href = "/elodie/" style = "font-family : Cubenet">e</a>
-        <a href = "/laurena/" style = "font-family : Cubenet">l</a>
-        <a href = "/dj9gag/" style = "font-family : Cubenet">d</a>
+
+  <body class = "flex-col-spaceb-center">
+    <div class = "header flex-col-center-right">
+      <span class = "header-title"><a href = "">Jouvence.</a></span>
+    </div>
+
+    <div class = "main-cont flex-col-spacea-center">
+      <div class = "bio-cont flex-col-spacea-center">
+        <div class = "bio">hello, i'm jouvence, a synthesis enthusiast based in toulouse, france</div>
       </div>
-      <div class = "center">
-        <span class = ""><a href = "http://soundcloud.com/hyper_jouvence" target = '_blank'>soundcloud</a></span>
-        ✧
-        <span class = ""><a href = "http://instagram.com/hyper.jouvence" target = '_blank'>instagram</a></span>
+
+      <div class = "search-cont flex-col-center-center">
+        <span class = "input-label blink">looking for something ?</span>
+        <input type = "text" id = "looking_search" class = "search-bar" placeholder = ""/>
+        <div class = "all-results no-result flex-row-center-center" id = "results"></div>
+        <div class = "suggestions-cont flex-col-center-center">
+          <span style = "margin-bottom : 5px">some recent searches other users liked :</span>
+          <div class = "suggestions flex-row-center-center" id = "suggestions_"></div>
+        </div>
       </div>
     </div>
-    
+
+    <div class = "footer flex-row-center-center">
+      <a href = "https://soundcloud.com/hyper_jouvence">soundcloud</a>
+      <span style = "margin : 10px;">✧</span>
+      <a href = "https://instagram.com/hyper.jouvence">instagram</a>
+    </div>
+
+    <script type = "text/javascript" src = "js/index_script.js"></script>
   </body>
 </html>
