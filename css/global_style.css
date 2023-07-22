@@ -1,0 +1,100 @@
+/* keyframes + animations declaration */
+@keyframes rotation {
+  from{transform: rotate(0deg);letter-spacing: 0px;}
+  to{transform: rotate(360deg); letter-spacing : 0px;}
+  50%{transform: rotate(180deg); letter-spacing: 300px;}}
+@keyframes blink {70%{opacity: .2;}}
+
+.rotate {animation: rotation 60s infinite linear;}
+.blink {
+  z-index : 0 !important;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: initial;
+  animation-fill-mode: initial;}
+
+/* typeface imports */
+@font-face{
+  font-family: 'Authentic Sans';
+  src: url('../assets/fonts/authentic.otf') format("opentype");
+}
+
+/* vars declaration */
+:root{
+  --font-color: #002fa7;
+  --font-size: 15px;
+
+  --light-blue-accent : #87C1FF;
+
+  --light-disabled-red : #FFABB3;
+  --dark-disabled-red : #802F37;
+
+  --dark-green : #009066;
+  --light-green : #4DD1A1;
+
+}
+
+/* flex declarations */
+.flex-col-spaceb-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col-spacea-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-col-center-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-row-center-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-start-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-row-spaceb-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* primitive tags */
+a{
+  color : inherit;
+  text-decoration : none;
+}
+
+/* global classes */
+.hidden{
+  height :0;
+  display : none;
+}

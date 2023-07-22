@@ -4,7 +4,8 @@
     <title>jouvence.club</title>
     <link rel = "icon" type = "image/x-icon" href = "assets/img/favicon.ico">
     <link rel = "apple-touch-icon" type = "image/x-icon" href = "assets/img/favicon.ico">
-    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/global_style.css">
+    <link rel = "stylesheet" href = "css/index.css">
 
     <meta charset = "UTF-8">
     <meta name = "keywords" content = "art, 3d, synthesis, computer-assisted">
@@ -15,13 +16,17 @@
   </head>
 
   <body class = "flex-col-spaceb-center">
-    <div class = "header flex-col-center-right">
+
+    <div class = "header flex-row-spaceb-center">
+      <span class = "header-file-path flex-row-start-center" id = "header-file-path_"><a href = "">jouvence</a>/<a href = "">index</a></span>
       <span class = "header-title"><a href = "">Jouvence.</a></span>
     </div>
 
     <div class = "main-cont flex-col-spacea-center">
       <div class = "bio-cont flex-col-spacea-center">
-        <div class = "bio">hello, i'm jouvence, a synthesis enthusiast based in toulouse, france</div>
+        <div class = "bio">hello, i'm jouvence, a synthesis enthusiast currently in toulouse, france<br>
+          i love computer-assisted modelisation, the digital world, linguistics, oscillators, graphic design and mathematics
+        </div>
       </div>
 
       <div class = "search-cont flex-col-center-center">
@@ -35,12 +40,16 @@
       </div>
     </div>
 
-    <div class = "footer flex-row-center-center">
-      <a href = "https://soundcloud.com/hyper_jouvence">soundcloud</a>
+    <div class = "footer flex-row-center-center" style = "opacity : .3">
+      <a href = "https://soundcloud.com/hyper_jouvence" target = "_blank" style = "color: #ff5500">soundcloud</a>
       <span style = "margin : 10px;">✧</span>
-      <a href = "https://instagram.com/hyper.jouvence">instagram</a>
+      <a href = "https://instagram.com/hyper.jouvence" target = "_blank" style = "color : #1dd04e">instagram</a>
     </div>
 
+    <script type = "text/javascript" src = "js/projects.js"></script>
+    <script type = "text/javascript" src = "js/funclib.js"></script>
+    <script type = "text/javascript" src = "js/navtree.js"></script>
     <script type = "text/javascript" src = "js/index_script.js"></script>
+
   </body>
 </html>
