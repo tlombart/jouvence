@@ -1,0 +1,48 @@
+.main-cont{
+  height : 100%;
+  width : 100%;
+  overflow : auto;
+
+  margin-top : 30px;
+}
+
+table{
+  border-collapse: collapse;
+  width : 80%
+}
+
+#projects-table th{
+  text-align : left;
+}
+
+#projects-table td, tr{
+  padding : calc(var(--padding-x) * 2) 0;
+}
+
+.project-tag{
+  outline : 1px solid var(--font-color);
+  margin-right : 10px;
+  padding : var(--padding);
+  border-radius : 20px;
+}
+
+.project-tag::before, .gift::before, .music::before, .musical-artwork::before, .dj-mix::before{
+  font-size : 75%;
+  opacity : .7;
+}
+
+.project-tag::before{
+  content : '# '
+}
+
+.gift::before{
+  content : '🎁 ';
+}
+
+.music::before, .musical-artwork::before, .dj-mix::before{
+  content : '♫ '
+}
+
+.animated{
+  animation: blink 3s infinite linear;
+}

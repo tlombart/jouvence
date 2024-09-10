@@ -1,0 +1,386 @@
+html, body{
+  font-family: 'Authentic Sans';
+  color: var(--font-color);
+  font-size: var(--font-size);
+
+  width: 100%;
+  height: 100%;
+
+  z-index : 1;
+}
+
+/* flex grow params */
+/* inside body */
+.header{flex-grow: 1;}
+.main-cont{flex-grow: 8;}
+.footer{flex-grow: 1;}
+
+/* inside main-cont */
+.bio{flex-grow: 2;}
+.search-cont{flex-grow: 8;}
+
+.bio-cont, .search-cont{
+  width: 100%;
+}
+
+.bio{
+  max-width : 80%;
+  padding: 20px 0;
+}
+
+.input-label{
+  z-index : 0 !important;
+  font-size : calc(var(--font-size) * 1.5);
+}
+
+.search-bar{
+  border: none;
+  border-bottom : 2px solid var(--font-color);
+
+  width : 100%;
+  max-width : 250px;
+
+  font-size : calc(var(--font-size) * 1.5);
+}
+
+.search-bar:focus, #cars:focus{
+  outline : none;
+}
+
+.search-cont > div, .search-cont > span, .search-cont > input{
+  margin : 20px 0;
+}
+
+.search-suggestion, .search-result{
+  padding : var(--padding);
+  border-radius : 20px;
+}
+
+.search-suggestion{
+  border : 0 !important;
+  color : var(--font-color);
+  background-color: var(--light-blue-accent);
+}
+
+.all-results, .suggestions{
+  flex-wrap: wrap;
+}
+
+.all-results{
+  width : 60%;
+
+}
+
+.no-result{
+  color : lightgray;
+}
+
+.search-result{
+  border : 2px solid var(--font-color);
+  border-radius: 20px;
+}
+
+.weird-result{
+  color : var(--light-disabled-red);
+}
+
+.weird-result-suggestion{
+  color : var(--dark-green);
+  text-decoration: underline;
+
+  cursor : pointer;
+
+  margin : 0 13px;
+}
+
+.disabled-project{
+  cursor : not-allowed;
+
+  color : var(--dark-disabled-red);
+  background-color : var(--light-disabled-red);
+  border : 2px solid var(--dark-disabled-red);
+}
+
+.project-sample{
+  z-index : 3;
+  border : 4px solid #e3e3e3;
+  background : #e3e3e3;
+  border-radius : 10px;
+  position : absolute;
+  padding : 4px;
+
+  max-width : 21%;
+  width : 350px;
+
+  box-shadow : #999 0 0 5px 0px;
+
+  cursor : move;
+  transition : ease all .5s;
+}
+
+.project-sample-header{
+  width : 100%;
+}
+
+.project-sample-header-title{
+  margin-left : auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+/* .project-sample-header-title::before{
+  display : inline-block;
+  content : "check out : ";
+  opacity : 0.5;
+  text-decoration :none;
+  margin-right : 3px;
+  cursor : default !important;
+} */
+
+
+.project-sample-header-actions-close, .project-sample-header-actions-open{
+  --button-size : 16px;
+  cursor : pointer;
+
+  border-radius: 100%;
+  width: var(--button-size);
+  height: var(--button-size);
+
+  margin-right : 6px;
+
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  justify-content : center;
+}
+
+.project-sample-header-actions-close {
+  background: var(--light-disabled-red);
+}
+
+.project-sample-header-actions-close::after {
+  color : var(--dark-disabled-red);
+  content : '×';
+  transition : ease all .5s;
+}
+
+.project-sample-header-actions-open {
+  background: var(--light-green);
+}
+
+.project-sample-header-actions-open::after {
+  transform: rotate(45deg);
+  color : var(--dark-green);
+  content : '×';
+  transition : ease all .5s;
+}
+
+.project-sample img{
+  border-radius : 10px;
+  width : 100%;
+  transition : ease all .5s;
+}
+
+/*
+.margin-auto{margin: auto;}
+.center{text-align: center}
+.left{text-align: left}
+.inline-block{display: inline-block}
+
+#main{
+  background:
+    url('../img/jouvence.png') no-repeat 50% 25% fixed,
+    radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%);
+    background-size: 100%;
+}
+
+#vg{
+  background:
+    url('../vagalclub/img/vc_logo-_Vclub_1920x1080p.png') no-repeat 50% 0% fixed,
+    radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%) no-repeat 50% 25% fixed;
+  background-size: 30%, 100%
+}
+
+#elodie, #dj9gag{
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 1), pink 4%, #0007a7 25%)
+}
+
+#laurena{
+  background: #0007a7;
+}
+
+#dj9gag, #vg{
+  height: 130vh;
+}
+
+#charlotte{
+  background-image: url('../charlotte/img/a3_1920p.png');
+  background-size: cover;
+}
+
+.front-box{
+  max-width: 40%;
+  background: rgba(128, 128, 255, 0.1);
+  border-radius: 20px;
+
+  margin-bottom: 0;
+  margin: auto;
+  padding: 20px 40px;
+
+  box-shadow: 0 0 100px rgba(255, 255, 255, .4) inset;
+  border: 7px solid rgba(255, 255, 255, .2)
+}
+
+.img-carrousel{
+  max-width: 100vw;
+  width: 600px;
+  height: 500px;
+  margin-bottom: 30px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.img-carrousel img{
+  margin-right: 10px;
+  height: 500px;
+}
+
+.gift-link{
+  color: #0007a7;
+  font-size: 3vh;
+  border-radius: 200px;
+  background: white;
+  padding: 32px 64px;
+  text-decoration: none;
+  transition: all 1s ease-out;
+}
+
+.gift-link:hover{
+  color: #0007a7;
+  background: pink;
+}
+
+.icons-links{
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+
+a{
+  color: white
+}
+
+a:hover {
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	transform: scale(-1, 1);
+}
+
+a:visited{
+  color: white;
+}
+
+.ocarinas-cont{
+  width: 300px;
+
+  position: absolute;
+  top: calc(100% - 150px);
+  left: 50px;
+
+  filter: drop-shadow(0 0 5px #eceef0);
+}
+
+.ocarinas{
+  height: 100px;
+  width: 100px;
+}
+
+
+.karlfroye-img-cont{
+  background: #eceef0;
+
+  height: calc(500px + 20px + 7px*2);
+  width: 500px;
+
+  border: 8px #eceef0 solid;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+
+  z-index: -1;
+}
+
+@media (orientation: landscape){
+  .karlfroye-img-cont{
+    position: absolute;
+    left: calc(100% - 550px);
+    top: 50px;
+  }
+}
+
+@media (orientation: portrait){
+  .karlfroye-img-cont{
+    position: absolute;
+    left: calc(50% - (500px + 8px*2)/2);
+    top: 50px;
+  }
+}
+
+.karlfroye-img-cont::before{
+  display: block;
+
+  height: 20px;
+  width: 500px;
+
+  padding: 7px 0;
+
+  background: #eceef0;
+
+  text-align: center;
+  font-weight: bold;
+  color: #4a4a4b;
+  content: "charlotte-500px.jpg";
+}
+
+.karlfroye-img{
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container a{
+  text-decoration: none;
+}
+
+.file-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.file-icon{
+  height: 100px;
+  width: 100px;
+}
+
+.file-name{
+  text-align: center;
+  text-shadow: 2px 2px 5px #eceef0;
+}
+
+.trash{
+  background: url('img/elodie.png') #000092 no-repeat center center fixed; overflow: visible
+} */

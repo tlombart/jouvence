@@ -1,0 +1,43 @@
+:root{
+  --carrousel-height : 10px;
+  --carrousel-max-height : 500px;
+}
+
+/* flex grow params */
+/* inside body */
+.header{flex-grow: 1;}
+.main-cont{flex-grow: 8;}
+.footer{flex-grow: 1;}
+
+/* inside main-cont */
+.bio{flex-grow: 2;}
+.vagal-free-download{flex-grow: 1;}
+.vagal-img-carrousel{flex-grow: 7;}
+
+.vagal-chronolist div{
+  width :100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vagal-date{
+  font-family : monospace;
+  opacity : .6;
+}
+
+.vagal-img-carrousel{
+  max-width:100vw;
+  width: 100%;
+  height: var(--carrousel-height);
+  margin-bottom : 30px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.vagal-img-carrousel img{
+  margin-right: 10px;
+  height : 100%;
+  max-height: var(--carrousel-max-height);
+}
