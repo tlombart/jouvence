@@ -19,34 +19,13 @@ html, body{
 .bio{flex-grow: 2;}
 .search-cont{flex-grow: 8;}
 
-.header, .footer, .main-cont, .bio-cont, .search-cont{
+.bio-cont, .search-cont{
   width: 100%;
-}
-
-.header-file-path a:last-child{
-  opacity : .5;
 }
 
 .bio{
   max-width : 80%;
   padding: 20px 0;
-}
-
-.main-cont div{margin : 0}
-
-.header-file-path, .header-title{
-  margin : 0 20px;
-}
-
-.header-title{
-  font-size: calc(var(--font-size) * 3);
-}
-
-.header-title a:hover::before{
-  content : "go back home";
-  margin-right : 10px;
-  opacity : .5;
-  font-size : var(--font-size);
 }
 
 .input-label{
@@ -73,7 +52,7 @@ html, body{
 }
 
 .search-suggestion, .search-result{
-  padding : 4px 12px;
+  padding : var(--padding);
   border-radius : 20px;
 }
 
@@ -128,7 +107,7 @@ html, body{
   background : #e3e3e3;
   border-radius : 10px;
   position : absolute;
-
+  padding : 4px;
 
   max-width : 21%;
   width : 350px;
@@ -136,11 +115,11 @@ html, body{
   box-shadow : #999 0 0 5px 0px;
 
   cursor : move;
+  transition : ease all .5s;
 }
 
 .project-sample-header{
   width : 100%;
-
 }
 
 .project-sample-header-title{
@@ -162,51 +141,48 @@ html, body{
   cursor : default !important;
 } */
 
-.project-sample-header-actions-close, .project-sample-header-actions-open{
-  cursor : pointer;
-}
 
-.project-sample-header-actions-close {
+.project-sample-header-actions-close, .project-sample-header-actions-open{
   --button-size : 16px;
-  background: var(--light-disabled-red);
-  border-radius: 50%;
+  cursor : pointer;
+
+  border-radius: 100%;
   width: var(--button-size);
   height: var(--button-size);
 
   margin-right : 6px;
+
+  display : flex;
+  flex-direction : row;
+  align-items : center;
+  justify-content : center;
+}
+
+.project-sample-header-actions-close {
+  background: var(--light-disabled-red);
 }
 
 .project-sample-header-actions-close::after {
   color : var(--dark-disabled-red);
   content : '×';
-  position : absolute;
-  left : calc(var(--button-size)/4);
-  top : -1px;
+  transition : ease all .5s;
 }
 
 .project-sample-header-actions-open {
-  --button-size : 16px;
   background: var(--light-green);
-  border-radius: 50%;
-  width: var(--button-size);
-  height: var(--button-size);
-
-  margin-right : 6px;
 }
 
 .project-sample-header-actions-open::after {
   transform: rotate(45deg);
   color : var(--dark-green);
   content : '×';
-  position : absolute;
-  left : calc(var(--button-size)/4);
-  top : -1px;
+  transition : ease all .5s;
 }
 
 .project-sample img{
   border-radius : 10px;
   width : 100%;
-
+  transition : ease all .5s;
 }
 
 /*

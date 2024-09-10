@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // function library
 // -----------------------------------------------------------------------------
-function add_mouse_events(div){
+function add_mouse_events(div){ 
   var mousePosition;
   var offset = [0,0];
   var isDown = false;

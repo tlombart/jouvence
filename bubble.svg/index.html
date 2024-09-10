@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang = "en" dir = "ltr" class = "flex-col-spaceb-center">
+  <head>
+    <title>bubble.svg</title>
+    <link rel = "icon" type = "image/x-icon" href = "assets/img/favicon.ico">
+    <link rel = "apple-touch-icon" type = "image/x-icon" href = "assets/img/favicon.ico">
+    <link rel = "stylesheet" href = "../css/global_style.css">
+    <link rel = "stylesheet" href = "../css/bubble.css">
+
+    <meta charset = "UTF-8">
+    <meta name = "keywords" content = "art, 3d, synthesis, computer-assisted">
+    <meta name = "author" content = "jouvence">
+    <meta name = "description" content = "">
+
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body class = "flex-col-spaceb-center">
+
+    <div class = "header flex-row-spaceb-center">
+      <span class = "header-file-path flex-row-start-center" id = "header-file-path_"><a href = "../">jouvence</a>/<a href = "">bubble.svg</a></span>
+      <span class = "header-title"><a href = "../">Jouvence.</a></span>
+    </div>
+
+    <div class = "main-cont flex-col-spacea-center" style = "width : 100%; height : 200px;">
+      <svg viewBox = "0 0 100 100" xmlns = "http://www.w3.org/2000/svg" class = "bubble">
+        <defs>
+          <path id = "arc1" d="M 25 75 A 25 25 0 0 0 75 25" stroke = "white" />
+          <circle id = "arc2" cx = "50" cy = "50" r = "37.5" stroke = "red"/>
+          <radialGradient id = "g1" cx = "50%" cy = "50%" r = "50%">
+            <stop stop-color = "transparent" offset = "0%"/>
+            <stop stop-color = "pink" offset = "80%"/>
+            <stop stop-color = "orange" offset = "99%"/>
+            <stop stop-color = "white" offset = "100%"/>
+          </radialGradient>
+        </defs>
+        
+        <circle cx = "50" cy = "50" r = "50" fill="url(#g1)"/>
+        <!-- <circle cx = "25" cy = "25" r = "1" fill = "white"/>
+        <circle cx = "75" cy = "75" r = "1" fill = "white"/> -->
+
+        <text style = "font-size : 8px;fill : white;" class = "rotation-bubble" transform-origin = "50 50">
+          <textPath href="#arc1">A. G. Cook</textPath>
+        </text>
+        <text style = "font-size : 8px;fill : white;" class = "rotation-bubble-antih" transform-origin = "50 50">
+          <textPath href="#arc2" >Silver Thread Golden Needle (Jouvence's Sewing Kit Mix)</textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class = "footer flex-row-center-center">
+        a Jouvence SVG experiment
+    </div>
+
+
+  </body>
+</html>
