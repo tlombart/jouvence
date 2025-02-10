@@ -130,11 +130,11 @@ a{
 
 /* global classes */
 .sc-link{
-  color: #ff5500
+  color: inherit;
 }
 
 .ig-link{
-  color : #1dd04e
+  color : inherit;
 }
 
 .hidden{

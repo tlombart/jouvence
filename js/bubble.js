@@ -1,0 +1,1 @@
+const bubble_cont = document.getElementById("bubble-cont")
