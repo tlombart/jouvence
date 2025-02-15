@@ -41,6 +41,13 @@
 }
 
 /* flex declarations */
+.fgap-4{
+  gap: 4px;
+}
+.fgap-20{
+  gap: 20px;
+}
+
 .flex-col-spaceb-center{
   display: flex;
   flex-direction: column;
@@ -167,4 +174,12 @@ a{
 
 .header-file-path a:last-child{
   opacity : .5;
+}
+
+.icon-container{}
+.file-container{}
+.file-name{}
+.file-icon{
+  width: 32px;
+  height: 32px;
 }
